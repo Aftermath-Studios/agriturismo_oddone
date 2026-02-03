@@ -1,0 +1,46 @@
+.location_section {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent; 
+}
+
+.location_container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+.location_header h2 {
+    font-size: 2.5rem;
+    color: var(--text-main); 
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading, serif); 
+}
+
+.location_header p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+
+.map_frame_wrapper {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+
+  margin: 0 auto;
+
+  border-radius: 25px; 
+  overflow: hidden;    
+  border: 1px solid var(--border-color); 
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.map_frame_wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

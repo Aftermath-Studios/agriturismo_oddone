@@ -1,0 +1,653 @@
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Service Hero */
+.service-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.service-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.service-hero p {
+  font-size: 1.2rem;
+  color: #00d4ff;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1rem !important;
+  color: #e0e0e0 !important;
+  font-weight: 500 !important;
+  margin-top: 1rem !important;
+}
+
+/* Overview Section */
+.overview-section {
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.overview-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.overview-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.overview-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-top: 5px solid #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Levels Section */
+.levels-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.levels-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.level-card {
+  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 5px solid #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.level-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.level-card ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.level-card li {
+  color: #555;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.level-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* Trails/Routes Section */
+.trails-section {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.trails-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.trails-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trail-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.trail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.trail-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.trail-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  font-size: 1.4rem;
+  color: #1a1a2e;
+}
+
+.trail-card p {
+  padding: 0.5rem 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.difficulty {
+  display: block;
+  padding: 0.5rem 1.5rem 1.5rem;
+  color: #00d4ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Package Section */
+.package-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.package-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+}
+
+.package-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-col h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.package-col ul {
+  list-style: none;
+}
+
+.package-col li {
+  color: #555;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.package-col li:last-child {
+  border-bottom: none;
+}
+
+.pricing-box {
+  text-align: center;
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.price {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-box p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Gallery Section */
+.service-gallery {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.service-gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item p {
+  padding: 1rem;
+  background: #f8f8f8;
+  font-weight: 600;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+/* Preparation Section */
+.preparation-section {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.preparation-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.preparation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prep-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 5px solid #ffa500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prep-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.prep-item ul {
+  list-style: none;
+}
+
+.prep-item li {
+  color: #555;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.prep-item li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.prep-item li:last-child {
+  border-bottom: none;
+}
+
+/* CTA Section */
+.service-cta {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  text-align: center;
+}
+
+.service-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+}
+
+/* Special Sections for Specific Pages */
+
+/* Seasons Section (Funghi Page) */
+.seasons-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.seasons-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.seasons-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.season-card {
+  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 5px solid #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.season-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.season-card ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.season-card li {
+  color: #555;
+  padding: 0.5rem 0;
+}
+
+.season-note {
+  color: #00d4ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Nature Section (Trekking) */
+.nature-section {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.nature-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.nature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-top: 5px solid #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.nature-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Species Section (Funghi) */
+.species-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.species-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.species-card {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.species-card.edible {
+  background: rgba(0, 255, 100, 0.1);
+  border-left: 5px solid #00ff64;
+}
+
+.species-card.rare {
+  background: rgba(255, 200, 0, 0.1);
+  border-left: 5px solid #ffc800;
+}
+
+.species-card.poisonous {
+  background: rgba(255, 100, 100, 0.1);
+  border-left: 5px solid #ff6464;
+}
+
+.species-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.species-card ul {
+  list-style: none;
+}
+
+.species-card li {
+  color: #555;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.species-card li:last-child {
+  border-bottom: none;
+}
+
+.species-card strong {
+  color: #1a1a2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-hero p {
+    font-size: 1rem;
+  }
+
+  .features-grid,
+  .levels-grid,
+  .trails-grid,
+  .seasons-grid,
+  .nature-grid,
+  .species-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .gallery-grid,
+  .preparation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-content h2,
+  .features-section h2,
+  .levels-section h2,
+  .trails-section h2,
+  .package-section h2,
+  .service-gallery h2,
+  .preparation-section h2,
+  .seasons-section h2,
+  .nature-section h2,
+  .species-section h2,
+  .service-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+}
