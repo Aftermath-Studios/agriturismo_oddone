@@ -6,9 +6,9 @@ export default function TrekkingPage() {
 			{/* Hero Section */}
 			<section className="service-hero">
 				<h1>Escursione Trekking</h1>
-				<p>Camminate Panoramiche nella Val Bormida</p>
+				<p>Bardineto, una crocevia incredibile di sentieri.</p>
 				<p className="hero-subtitle">
-					Percorsi a piedi immersi nella natura per scoprire la bellezza della Liguria
+					Esplora i panorami mozzafiato di Bardinto, dove si possono fare delle semplici cammionate, ma con un'immersione totale tra i faggi secolari e i resti delle fortificazioni napoleoniche che circondano la vallata.
 				</p>
 			</section>
 
