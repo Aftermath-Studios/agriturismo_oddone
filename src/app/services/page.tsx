@@ -182,15 +182,15 @@ export default function Services() {
 				<h2>Scopri i Sentieri</h2>
 				<div className="gallery-grid">
 					<div className="gallery-item">
-						<img src="/Discesa_da_Bardineto.mp4" alt="Discesa da Bardineto" />
+						<img src="/IMG-20.jpg" alt="Discesa da Bardineto" />
 						<p>Discesa da Bardineto</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/Discesa_sentiero_7_Bardineto.mp4" alt="Sentiero 7" />
+						<img src="/10 (2).jpg" alt="Sentiero 7" />
 						<p>Sentiero 7</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/Intermedio_di_Catalano.mp4" alt="Intermedio Catalano" />
+						<img src="/IMG-17.PNG" alt="Intermedio Catalano" />
 						<p>Intermedio Catalano</p>
 					</div>
 					<div className="gallery-item">

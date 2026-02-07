@@ -6,8 +6,8 @@
 
 /* Service Hero */
 .service-hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -20,14 +20,14 @@
 
 .service-hero p {
   font-size: 1.2rem;
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: 600;
   margin: 0.5rem 0;
 }
 
 .hero-subtitle {
   font-size: 1rem !important;
-  color: #e0e0e0 !important;
+  color: var(--text-on-dark-muted) !important;
   font-weight: 500 !important;
   margin-top: 1rem !important;
 }
@@ -35,7 +35,7 @@
 /* Overview Section */
 .overview-section {
   padding: 3rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .overview-content {
@@ -46,27 +46,27 @@
 .overview-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .overview-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--text-body);
   margin-bottom: 1.5rem;
 }
 
 /* Features Section */
 .features-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .features-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .features-grid {
@@ -78,10 +78,10 @@
 }
 
 .feature-card {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
-  border-top: 5px solid #00d4ff;
+  border-top: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -94,26 +94,26 @@
 .feature-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
   font-weight: 600;
 }
 
 .feature-card p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.6;
 }
 
 /* Levels Section */
 .levels-section {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .levels-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .levels-grid {
@@ -125,17 +125,17 @@
 }
 
 .level-card {
-  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  background: linear-gradient(135deg, var(--card-from), var(--card-to));
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #00d4ff;
+  border-left: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .level-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .level-card ul {
@@ -144,13 +144,13 @@
 }
 
 .level-card li {
-  color: #555;
+  color: var(--text-body);
   padding: 0.5rem 0;
   font-weight: 500;
 }
 
 .level-description {
-  color: #666;
+  color: var(--text-muted);
   line-height: 1.6;
   font-size: 0.95rem;
   font-style: italic;
@@ -159,14 +159,14 @@
 /* Trails/Routes Section */
 .trails-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .trails-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .trails-grid {
@@ -178,7 +178,7 @@
 }
 
 .trail-card {
-  background: white;
+  background: var(--surface-1);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -200,19 +200,19 @@
 .trail-card h3 {
   padding: 1.5rem 1.5rem 0.5rem;
   font-size: 1.4rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .trail-card p {
   padding: 0.5rem 1.5rem;
-  color: #666;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
 .difficulty {
   display: block;
   padding: 0.5rem 1.5rem 1.5rem;
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -220,14 +220,14 @@
 /* Package Section */
 .package-section {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .package-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .package-content {
@@ -236,7 +236,7 @@
   gap: 3rem;
   max-width: 1000px;
   margin: 0 auto 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -245,7 +245,7 @@
 .package-col h3 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .package-col ul {
@@ -253,7 +253,7 @@
 }
 
 .package-col li {
-  color: #555;
+  color: var(--text-body);
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -264,8 +264,8 @@
 
 .pricing-box {
   text-align: center;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
-  color: white;
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
+  color: var(--text-on-dark);
   padding: 2rem;
   border-radius: 10px;
   max-width: 400px;
@@ -287,14 +287,14 @@
 /* Gallery Section */
 .service-gallery {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .service-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .gallery-grid {
@@ -326,23 +326,23 @@
 
 .gallery-item p {
   padding: 1rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--heading);
   text-align: center;
 }
 
 /* Preparation Section */
 .preparation-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .preparation-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .preparation-grid {
@@ -354,17 +354,17 @@
 }
 
 .prep-item {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #ffa500;
+  border-left: 5px solid var(--accent-sun);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .prep-item h3 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .prep-item ul {
@@ -372,7 +372,7 @@
 }
 
 .prep-item li {
-  color: #555;
+  color: var(--text-body);
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-left: 1.5rem;
@@ -383,7 +383,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #ffa500;
+  color: var(--accent-sun);
   font-weight: bold;
 }
 
@@ -394,8 +394,8 @@
 /* CTA Section */
 .service-cta {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
   text-align: center;
 }
 
@@ -409,25 +409,25 @@
   max-width: 600px;
   margin: 0 auto 2rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: var(--text-on-dark-muted);
 }
 
 .cta-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
-  color: white;
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
+  color: var(--text-on-dark);
   padding: 1rem 2.5rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(195, 106, 74, 0.35);
 }
 
 .cta-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(195, 106, 74, 0.5);
 }
 
 /* Special Sections for Specific Pages */
@@ -435,21 +435,21 @@
 /* Seasons Section (Funghi Page) */
 .seasons-section {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .seasons-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .seasons-intro {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 2rem;
-  color: #555;
+  color: var(--text-body);
   font-size: 1.05rem;
 }
 
@@ -462,17 +462,17 @@
 }
 
 .season-card {
-  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  background: linear-gradient(135deg, var(--card-from), var(--card-to));
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #00d4ff;
+  border-left: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .season-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .season-card ul {
@@ -481,12 +481,12 @@
 }
 
 .season-card li {
-  color: #555;
+  color: var(--text-body);
   padding: 0.5rem 0;
 }
 
 .season-note {
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
   margin: 0;
@@ -495,14 +495,14 @@
 /* Nature Section (Trekking) */
 .nature-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .nature-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .nature-grid {
@@ -514,10 +514,10 @@
 }
 
 .nature-card {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
-  border-top: 5px solid #00d4ff;
+  border-top: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -525,25 +525,25 @@
 .nature-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .nature-card p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.6;
 }
 
 /* Species Section (Funghi) */
 .species-section {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .species-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .species-grid {
@@ -561,24 +561,24 @@
 }
 
 .species-card.edible {
-  background: rgba(0, 255, 100, 0.1);
-  border-left: 5px solid #00ff64;
+  background: rgba(110, 138, 77, 0.12);
+  border-left: 5px solid var(--status-easy);
 }
 
 .species-card.rare {
-  background: rgba(255, 200, 0, 0.1);
-  border-left: 5px solid #ffc800;
+  background: rgba(196, 154, 68, 0.12);
+  border-left: 5px solid var(--status-medium);
 }
 
 .species-card.poisonous {
-  background: rgba(255, 100, 100, 0.1);
-  border-left: 5px solid #ff6464;
+  background: rgba(176, 90, 79, 0.12);
+  border-left: 5px solid var(--status-hard);
 }
 
 .species-card h4 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .species-card ul {
@@ -586,7 +586,7 @@
 }
 
 .species-card li {
-  color: #555;
+  color: var(--text-body);
   padding: 0.7rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -596,7 +596,7 @@
 }
 
 .species-card strong {
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 /* Responsive Design */

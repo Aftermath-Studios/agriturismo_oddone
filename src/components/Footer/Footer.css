@@ -11,7 +11,7 @@
     top: 0;
     left: 2.5%;
     width: 95%;
-    border-top: 1px solid #afafaf;
+    border-top: 1px solid var(--border-strong);
 }
 
 .footer_flex {
@@ -32,7 +32,7 @@
 }
 
 .info_container {
-    color: #6e6e6e;
+    color: var(--text-body);
     flex-direction: column;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .info_link:hover {
-    color: #afafaf;
+    color: var(--accent-alt);
 }
 
 .copyright {
     text-align: center;
-    color: #6e6e6e;
+    color: var(--text-muted);
     font-size: x-small;
     padding: 2vh 0 0.5vh 0;
 }
@@ -55,12 +55,12 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #6e6e6e;
+    color: var(--text-body);
     transition: color 0.3s ease;
 }
 
 .social_link:hover {
-    color: #afafaf;
+    color: var(--accent-alt);
 }
 
 .social_icon {
@@ -70,9 +70,9 @@
 }
 
 .ig_icon {
-    color: #E1306C;
+    color: var(--accent);
 }
 
 .fb_icon {
-    color: #1877F2;
+    color: var(--accent-cool);
 }

@@ -6,8 +6,8 @@
 
 /* Services Hero */
 .services-hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -20,21 +20,21 @@
 
 .services-hero p {
   font-size: 1.3rem;
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: 600;
 }
 
 /* Main Services */
 .main-services {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .main-services h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .services-list {
@@ -45,10 +45,10 @@
 }
 
 .service-item {
-  background: #f8f8f8;
+  background: var(--surface-2);
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #00d4ff;
+  border-left: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -61,12 +61,12 @@
 .service-item h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
   font-weight: 600;
 }
 
 .service-item p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.8;
   font-size: 1rem;
 }
@@ -74,20 +74,20 @@
 /* Package Section */
 .package-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  background: linear-gradient(135deg, var(--card-from), var(--card-to));
 }
 
 .package-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .package-intro {
   text-align: center;
   font-size: 1.2rem;
-  color: #00d4ff;
+  color: var(--accent);
   margin-bottom: 2rem;
   font-weight: 600;
 }
@@ -104,7 +104,7 @@
 .package-highlights h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .highlights-list {
@@ -116,7 +116,7 @@
 
 .highlights-list li {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--text-body);
   line-height: 1.8;
   padding: 0.5rem 0;
 }
@@ -128,11 +128,11 @@
 .package-price h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .price-box {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -141,54 +141,54 @@
 .price-box .price {
   font-size: 3rem;
   font-weight: bold;
-  color: #00d4ff;
+  color: var(--accent);
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .price-box p {
-  color: #666;
+  color: var(--text-muted);
   font-size: 1rem;
   margin: 0.5rem 0;
 }
 
 .price-box .small {
   font-size: 0.9rem;
-  color: #999;
+  color: var(--text-muted);
 }
 
 .note-box {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #ffa500;
+  border-left: 5px solid var(--accent-sun);
   max-width: 1000px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .note-box h4 {
-  color: #1a1a2e;
+  color: var(--heading);
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
 
 .note-box p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.8;
 }
 
 /* Extra Services */
 .extra-services {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .extra-services h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .extra-grid {
@@ -200,7 +200,7 @@
 }
 
 .extra-item {
-  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  background: linear-gradient(135deg, var(--card-from), var(--card-to));
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -216,17 +216,17 @@
 .extra-item h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .extra-item p {
-  color: #666;
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
 .price-small {
   display: block;
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -235,8 +235,8 @@
 /* Booking Section */
 .booking-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
 }
 
 .booking-section h2 {
@@ -257,19 +257,19 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 10px;
-  border: 2px solid #00d4ff;
+  border: 2px solid var(--accent);
   text-align: center;
 }
 
 .step h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .step p {
   line-height: 1.6;
-  color: #e0e0e0;
+  color: var(--text-on-dark-muted);
 }
 
 .cta-box {
@@ -289,39 +289,39 @@
 
 .cta-box .bold {
   font-weight: bold;
-  color: #00d4ff;
+  color: var(--accent);
   margin-bottom: 1.5rem;
 }
 
 .booking-cta {
   display: inline-block;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
-  color: white;
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
+  color: var(--text-on-dark);
   padding: 1rem 2.5rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(195, 106, 74, 0.35);
 }
 
 .booking-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(195, 106, 74, 0.5);
 }
 
 /* Dates Section */
 .dates-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .dates-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .dates-content {
@@ -333,43 +333,43 @@
 }
 
 .date-item {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .date-item.alert {
-  border-left: 5px solid #ffa500;
+  border-left: 5px solid var(--accent-sun);
 }
 
 .date-item h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .date-item p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.8;
 }
 
 .date-item strong {
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: bold;
 }
 
 /* Services Gallery */
 .services-gallery {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .services-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .gallery-grid {
@@ -401,18 +401,18 @@
 
 .gallery-item p {
   padding: 1rem;
-  background: #f0f0f0;
+  background: var(--surface-3);
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--heading);
   text-align: center;
 }
 
 /* Final CTA */
 .final-cta {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
   text-align: center;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .final-cta h2 {
@@ -422,8 +422,8 @@
 
 .cta-button-large {
   display: inline-block;
-  background: white;
-  color: #00d4ff;
+  background: var(--surface-1);
+  color: var(--accent);
   padding: 1.2rem 3rem;
   border-radius: 50px;
   text-decoration: none;

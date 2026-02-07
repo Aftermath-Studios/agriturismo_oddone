@@ -134,7 +134,7 @@ export default function MTBPage() {
 
 				<div className="trails-grid">
 					<div className="trail-card">
-						<img src="/Discesa_da_Bardineto.mp4" alt="Discesa da Bardineto" />
+						<img src="/IMG-20.jpg" alt="Discesa da Bardineto" />
 						<h3>Discesa da Bardineto</h3>
 						<p>Un'esperienza adrenalinica con vista spettacolare sulla Val Bormida. 
 						Perfetto per chi ama la velocità e la tecnica.</p>
@@ -142,7 +142,7 @@ export default function MTBPage() {
 					</div>
 
 					<div className="trail-card">
-						<img src="/Discesa_sentiero_7_Bardineto.mp4" alt="Sentiero 7" />
+						<img src="/10 (2).jpg" alt="Sentiero 7" />
 						<h3>Sentiero 7 Bardineto</h3>
 						<p>Un affascinante percorso che serpeggia tra i boschi della Val Bormida 
 						con panorami nascosti e passaggi tecnici.</p>
@@ -150,7 +150,7 @@ export default function MTBPage() {
 					</div>
 
 					<div className="trail-card">
-						<img src="/Intermedio_di_Catalano.mp4" alt="Intermedio Catalano" />
+						<img src="/IMG-17.PNG" alt="Intermedio Catalano" />
 						<h3>Intermedio Catalano</h3>
 						<p>Un percorso che combina single track tecnico con viste panoramiche 
 						della Liguria. Un must per chi ama le sfide.</p>

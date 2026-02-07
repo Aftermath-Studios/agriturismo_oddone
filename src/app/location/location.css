@@ -6,8 +6,8 @@
 
 /* Location Hero */
 .location-hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -20,7 +20,7 @@
 
 .location-hero p {
   font-size: 1.3rem;
-  color: #00d4ff;
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -28,7 +28,7 @@
 .map-section {
   width: 100%;
   min-height: 600px;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .map-section > * {
@@ -40,7 +40,7 @@
 /* Location Info */
 .location-info {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .info-container {
@@ -52,10 +52,10 @@
 }
 
 .info-card {
-  background: #f8f8f8;
+  background: var(--surface-2);
   padding: 2rem;
   border-radius: 10px;
-  border-top: 5px solid #00d4ff;
+  border-top: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -68,11 +68,11 @@
 .info-card h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .info-card p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -80,7 +80,7 @@
 .location-details,
 .contact-details,
 .directions {
-  background: white;
+  background: var(--surface-1);
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 1rem;
@@ -89,50 +89,50 @@
 .location-details p,
 .directions p {
   margin: 0.8rem 0;
-  color: #666;
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
 .location-details strong,
 .directions strong {
-  color: #1a1a2e;
+  color: var(--heading);
   font-weight: 600;
 }
 
 .contact-link {
   display: inline-block;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
-  color: white;
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
+  color: var(--text-on-dark);
   padding: 0.8rem 2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(195, 106, 74, 0.35);
 }
 
 .contact-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(195, 106, 74, 0.5);
 }
 
 .contact-text {
   font-size: 0.9rem;
-  color: #999;
+  color: var(--text-muted);
   margin-top: 0.8rem;
 }
 
 /* Highlights Section */
 .highlights-section {
   padding: 4rem 2rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
 }
 
 .highlights-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .highlights-grid {
@@ -144,10 +144,10 @@
 }
 
 .highlight-card {
-  background: white;
+  background: var(--surface-1);
   padding: 2rem;
   border-radius: 10px;
-  border-left: 5px solid #00d4ff;
+  border-left: 5px solid var(--accent);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -160,26 +160,26 @@
 .highlight-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
   font-weight: 600;
 }
 
 .highlight-card p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.6;
 }
 
 /* Attractions Section */
 .attractions-section {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .attractions-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .attractions-grid {
@@ -191,7 +191,7 @@
 }
 
 .attraction-card {
-  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  background: linear-gradient(135deg, var(--card-from), var(--card-to));
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -206,26 +206,26 @@
 .attraction-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: var(--heading);
   font-weight: 600;
 }
 
 .attraction-card p {
-  color: #555;
+  color: var(--text-body);
   line-height: 1.6;
 }
 
 /* Gallery Section */
 .location-gallery {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--surface-1);
 }
 
 .location-gallery h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #1a1a2e;
+  color: var(--heading);
 }
 
 .gallery-grid {
@@ -257,17 +257,17 @@
 
 .gallery-item p {
   padding: 1rem;
-  background: #f8f8f8;
+  background: var(--surface-2);
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--heading);
   text-align: center;
 }
 
 /* CTA Section */
 .location-cta {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+  color: var(--text-on-dark);
   text-align: center;
 }
 
@@ -281,25 +281,25 @@
   max-width: 600px;
   margin: 0 auto 2rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: var(--text-on-dark-muted);
 }
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #00d4ff, #0099cc);
-  color: white;
+  background: linear-gradient(135deg, var(--button-from), var(--button-to));
+  color: var(--text-on-dark);
   padding: 1rem 2.5rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(195, 106, 74, 0.35);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(195, 106, 74, 0.5);
 }
 
 /* Responsive Design */

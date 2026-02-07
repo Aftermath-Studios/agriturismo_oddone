@@ -1,8 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ivory: #fdf8f1;
+  --color-cream: #fffaf0;
+  --color-wheat: #f4ead7;
+  --color-sand: #e7dbc5;
+  --color-mist: #f1f4ee;
+  --color-forest: #2f4a3b;
+  --color-forest-deep: #213629;
+  --color-olive: #6c7b4c;
+  --color-terracotta: #c36a4a;
+  --color-terracotta-deep: #a9553a;
+  --color-sun: #d0a24a;
+  --color-charcoal: #2c2b28;
+  --color-slate: #5e594f;
+  --color-stone: #7a746a;
+  --color-river: #3d6b6f;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-charcoal);
+  --surface-1: var(--color-cream);
+  --surface-2: var(--color-mist);
+  --surface-3: var(--color-wheat);
+  --surface-4: var(--color-sand);
+
+  --heading: var(--color-forest);
+  --text-body: var(--color-slate);
+  --text-muted: var(--color-stone);
+  --text-on-dark: #f7f2e7;
+  --text-on-dark-muted: rgba(247, 242, 231, 0.75);
+
+  --accent: var(--color-terracotta);
+  --accent-strong: var(--color-terracotta-deep);
+  --accent-alt: var(--color-olive);
+  --accent-cool: var(--color-river);
+  --accent-sun: var(--color-sun);
+
+  --border-soft: rgba(47, 74, 59, 0.18);
+  --border-strong: rgba(47, 74, 59, 0.35);
+
+  --hero-from: var(--color-forest);
+  --hero-to: var(--color-forest-deep);
+  --card-from: var(--color-wheat);
+  --card-to: var(--color-sand);
+  --button-from: var(--accent);
+  --button-to: var(--accent-strong);
+  --nav-bg: rgba(47, 74, 59, 0.45);
+
+  --status-easy: #6e8a4d;
+  --status-medium: #c49a44;
+  --status-hard: #b05a4f;
 }
 
 @theme inline {
@@ -14,8 +61,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-forest-deep);
+    --foreground: var(--text-on-dark);
   }
 }
 

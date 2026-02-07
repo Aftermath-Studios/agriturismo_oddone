@@ -38,7 +38,7 @@ export default function Home() {
 				<h2>Scopri i Nostri Sentieri</h2>
 				<div className="gallery-grid">
 					<div className="gallery-item">
-						<img src="/Discesa_da_Bardineto.mp4" alt="Discesa da Bardineto" />
+						<img src="/IMG-20.jpg" alt="Discesa da Bardineto" />
 						<p>Discesa da Bardineto</p>
 					</div>
 					<div className="gallery-item">
