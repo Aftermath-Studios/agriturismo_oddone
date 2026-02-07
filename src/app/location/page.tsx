@@ -158,15 +158,15 @@ export default function Location() {
 				<h2>I Panorami di Bardineto</h2>
 				<div className="gallery-grid">
 					<div className="gallery-item">
-						<img src="/10 (1).jpg" alt="Panorama Val Bormida" />
+						<img src="/10-1.jpg" alt="Panorama Val Bormida" />
 						<p>Panorama Val Bormida</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/10 (2).jpg" alt="Sentieri Epici" />
+						<img src="/10-2.jpg" alt="Sentieri Epici" />
 						<p>Sentieri Epici</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/20 (1).png" alt="Vista dalla cima" />
+						<img src="/20-1.png" alt="Vista dalla cima" />
 						<p>Vista dalla Cima</p>
 					</div>
 					<div className="gallery-item">

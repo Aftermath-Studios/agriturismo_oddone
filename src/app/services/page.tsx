@@ -186,7 +186,7 @@ export default function Services() {
 						<p>Discesa da Bardineto</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/10 (2).jpg" alt="Sentiero 7" />
+						<img src="/10-2.jpg" alt="Sentiero 7" />
 						<p>Sentiero 7</p>
 					</div>
 					<div className="gallery-item">

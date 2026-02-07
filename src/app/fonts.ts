@@ -28,14 +28,9 @@ export const rowanFont = localFont({
             style: 'italic'
         },
         {
-            path: './fonts/rowan/Rowan-Bolditalic.woff2',
-            weight: '600',
+            path: './fonts/rowan/Rowan-BoldItalic.woff2',
+            weight: '700',
             style: 'italic'
-        },
-        {
-            path: './fonts/rowan/Rowan-Medium.woff2',
-            weight: '400',
-            style: 'medium'
         }
     ],
     variable: '--font-rowan',
