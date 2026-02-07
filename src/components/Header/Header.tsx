@@ -5,7 +5,7 @@ export default function Header() {
 		<div className="header_container">
 			<div className="header_inner">
 				<div className="brand">
-					<img src="/Logo Italy Bike Tours.svg" alt="Italy Bike Tours Logo" style={{ height: '60px' }}/>
+					<img src="/Logo-Italy-Bike-Tours.svg" alt="Italy Bike Tours Logo" style={{ height: '60px' }}/>
 				</div>
 				<div className="brand"> Agriturismo Oddone </div>
 				<nav className="nav_links">

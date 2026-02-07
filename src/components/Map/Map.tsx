@@ -4,12 +4,6 @@ export default function Map() {
 	return (
 		<section className="location_section" id="location">
 			<div className="location_container">
-				<div className="location_header">
-					<h2>Dove Trovarci</h2>
-					<p>
-						lorem ipsum me lo so scordato<br />
-					</p>
-					</div>
 
 					<div className="map_frame_wrapper">
 					<iframe

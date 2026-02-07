@@ -42,7 +42,7 @@ export default function Home() {
 						<p>Discesa da Bardineto</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/10 (1).jpg" alt="Panorama Val Bormida" />
+						<img src="/10-1.jpg" alt="Panorama Val Bormida" />
 						<p>Panorama Val Bormida</p>
 					</div>
 					<div className="gallery-item">
@@ -50,7 +50,7 @@ export default function Home() {
 						<p>Sentieri Epici</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/20 (6).jpg" alt="Vista Panoramica" />
+						<img src="/20-6.jpg" alt="Vista Panoramica" />
 						<p>Vista Panoramica</p>
 					</div>
 				</div>

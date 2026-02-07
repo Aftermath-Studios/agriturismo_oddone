@@ -142,7 +142,7 @@ export default function MTBPage() {
 					</div>
 
 					<div className="trail-card">
-						<img src="/10 (2).jpg" alt="Sentiero 7" />
+						<img src="/10-2.jpg" alt="Sentiero 7" />
 						<h3>Sentiero 7 Bardineto</h3>
 						<p>Un affascinante percorso che serpeggia tra i boschi della Val Bormida 
 						con panorami nascosti e passaggi tecnici.</p>
@@ -197,7 +197,7 @@ export default function MTBPage() {
 				<h2>Scopri l'Avventura</h2>
 				<div className="gallery-grid">
 					<div className="gallery-item">
-						<img src="/10 (1).jpg" alt="Panorama MTB" />
+						<img src="/10-1.jpg" alt="Panorama MTB" />
 						<p>Paesaggi Spettacolari</p>
 					</div>
 					<div className="gallery-item">
@@ -205,7 +205,7 @@ export default function MTBPage() {
 						<p>Single Track Tecnici</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/20 (6).jpg" alt="Natura" />
+						<img src="/20-6.jpg" alt="Natura" />
 						<p>Natura Incontaminata</p>
 					</div>
 					<div className="gallery-item">

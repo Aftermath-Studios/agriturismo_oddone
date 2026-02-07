@@ -138,7 +138,7 @@ export default function TrekkingPage() {
 
 				<div className="trails-grid">
 					<div className="trail-card">
-						<img src="/10 (2).jpg" alt="Trekking Val Bormida" />
+						<img src="/10-2.jpg" alt="Trekking Val Bormida" />
 						<h3>Trekking della Val Bormida</h3>
 						<p>Un affascinante percorso che segue il corso del fiume dal fondovalle, 
 						attraversando boschi di castagni e scoprendo borghi caratteristici.</p>
@@ -261,11 +261,11 @@ export default function TrekkingPage() {
 				<h2>Scopri i Nostri Sentieri</h2>
 				<div className="gallery-grid">
 					<div className="gallery-item">
-						<img src="/10 (1).jpg" alt="Panorama Trekking" />
+						<img src="/10-1.jpg" alt="Panorama Trekking" />
 						<p>Panorami Mozzafiato</p>
 					</div>
 					<div className="gallery-item">
-						<img src="/20 (6).jpg" alt="Sentieri" />
+						<img src="/20-6.jpg" alt="Sentieri" />
 						<p>Sentieri Ben Mantenuti</p>
 					</div>
 					<div className="gallery-item">

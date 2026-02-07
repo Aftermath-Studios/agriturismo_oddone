@@ -71,7 +71,7 @@ export default function FunghiPage() {
                         <img src="/IMG-19.JPG" alt="Funghi di Bardineto" />
                     </div>
                     <div className="gallery-item">
-                        <img src="/10 (1).jpg" alt="Natura Incontaminata" />
+                        <img src="/10-1.jpg" alt="Natura Incontaminata" />
                     </div>
                     <div className="gallery-item">
                         <img src="/header.jpg" alt="Cena in Agriturismo" />
