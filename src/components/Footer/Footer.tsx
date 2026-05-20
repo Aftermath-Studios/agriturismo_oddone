@@ -1,66 +1,66 @@
-import './Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { Link } from '@/i18n/navigation';
+import NewsletterForm from './NewsletterForm';
+import styles from './Footer.module.css';
 
 export default function Footer() {
-    return (
-        <div className='footer_container'>
-            <div className='footer_flex'>
-                
-                <div className='informations_container'>
-                    <p className='information_title'>Agriturismo Oddone</p>
-                    <div className="info_container">
-                        <p className="location">
-                            17057 Bardineto, Savona (SV), IT <br />
-                            Agriturismo Fratelli Oddone      <br />
-                            Via Martino, 13                  <br /> <br />
-                        </p>
-                    </div>
-                </div>
-
-                <div className='informations_container'>
-                    <p className='information_title'>Contatti</p>
-                    <div className="info_container">
-                        <p className="contacts">
-                            Telefono  +39 019-7907115        <br />
-                            Cellulare +39 328-6423895        <br /> 
-                            P. Iva    01311030090            <br />
-                        </p>
-                    </div>
-                </div>
-
-                <div className='informations_container'>
-                    <p className='information_title'>Collegamenti</p>
-                    <div className="info_container">
-
-                        <a href='#' className="info_link">Escursione Mountain Bike</a>    <br />
-                        <a href='/offers' className="info_link">Offerte dell'azienda</a>        <br />
-                        <a href='#' className="info_link">Alloggi e Ristorazione</a>      <br />
-                        <a href='/location' className="info_link">Dove Trovarci</a>               <br />
-                        <a href='#' className="info_link">Per Prenotare</a>               <br />
-                    </div>
-                </div>
-
-                <div className='informations_container'>
-                    <p className='information_title'>Socials</p>
-                    <div className="info_container">
-
-                        <a href='#' className="social_link">
-                            <FontAwesomeIcon icon={faInstagram} className="social_icon ig_icon" />
-                            <span>Instagram</span>
-                        </a>
-
-                        <a href='#' className="social_link">
-                            <FontAwesomeIcon icon={faFacebook} className="social_icon fb_icon" />
-                            <span>Facebook</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div className='copyright'>Copyrights © 2026 All Rights Reserved by Aftermath Studios.</div>
-
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.grid}>
+        {/* Col 1 — Brand */}
+        <div>
+          <div className={styles.brand}>
+            Agriturismo<br /><em>Oddone</em>
+          </div>
+          <p className={styles.blurb}>
+            Tra natura e sapori, dal 1987. Una cascina di famiglia in Valle Sabbia.
+          </p>
+          <div className={styles.social}>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="WhatsApp">WA</a>
+          </div>
         </div>
-    )
-}
 
+        {/* Col 2 — Esperienza */}
+        <div>
+          <h4>Esperienza</h4>
+          <ul>
+            <li><Link href="/alloggi">Alloggi</Link></li>
+            <li><Link href="/ristorante">Ristorante</Link></li>
+            <li><Link href="/bike-tour">Bike Tour</Link></li>
+            <li><Link href="/attivita">Attività</Link></li>
+            <li><Link href="/offers">Offerte</Link></li>
+          </ul>
+        </div>
+
+        {/* Col 3 — Informazioni */}
+        <div>
+          <h4>Informazioni</h4>
+          <ul>
+            <li><Link href="/#story">La nostra storia</Link></li>
+            <li><Link href="/#contact">Contatti</Link></li>
+            <li><a href="#">FAQ ospiti</a></li>
+            <li><a href="#">Politiche di cancellazione</a></li>
+            <li><a href="#">Lavora con noi</a></li>
+          </ul>
+        </div>
+
+        {/* Col 4 — Newsletter */}
+        <div>
+          <h4>Newsletter</h4>
+          <p className={styles.newsletterBlurb}>
+            Stagione, raccolti, offerte. Quattro volte l&apos;anno, non di più.
+          </p>
+          <NewsletterForm />
+        </div>
+      </div>
+
+      <div className={styles.bottom}>
+        <span>© 1987–2026 Agriturismo Oddone · P.IVA 02784560983</span>
+        <span>
+          <a href="#">Privacy</a> · <a href="#">Cookie</a> · <a href="#">Termini</a>
+        </span>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,123 @@
+.footer {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 100px var(--pad) 40px;
+}
+
+.grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: 1.1;
+}
+.brand em { font-style: italic; color: var(--terracotta); }
+
+.blurb {
+  margin-top: 24px;
+  max-width: 32ch;
+  font-size: 14px;
+  color: oklch(0.78 0.030 60);
+}
+
+.social {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+.social a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid oklch(0.40 0.018 60);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  transition: background 0.2s, border-color 0.2s;
+}
+.social a:hover { background: var(--terracotta); border-color: var(--terracotta); }
+
+.footer h4,
+.grid h4 {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: oklch(0.70 0.04 60);
+  margin: 0 0 22px;
+  font-weight: 600;
+}
+
+.grid ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 15px;
+}
+.grid ul a { color: var(--cream); transition: color 0.2s; }
+.grid ul a:hover { color: var(--terracotta); }
+
+.newsletterBlurb {
+  font-size: 14px;
+  color: oklch(0.78 0.030 60);
+  margin: 0 0 18px;
+}
+
+.newsletter {
+  display: flex;
+  border: 1px solid oklch(0.40 0.018 60);
+}
+.newsletter input {
+  background: transparent;
+  border: 0;
+  padding: 12px 14px;
+  flex: 1;
+  color: var(--cream);
+  font: inherit;
+  outline: none;
+  min-width: 0;
+}
+.newsletter input::placeholder { color: oklch(0.55 0.025 60); }
+.newsletter button {
+  background: var(--terracotta);
+  color: var(--bone);
+  border: 0;
+  padding: 0 16px;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.newsletter button:hover { background: var(--terracotta-deep); }
+
+.bottom {
+  max-width: var(--max);
+  margin: 80px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid oklch(0.30 0.014 60);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: oklch(0.60 0.025 60);
+  text-transform: uppercase;
+}
+.bottom a { color: inherit; }
+.bottom a:hover { color: var(--cream); }
+
+/* Responsive */
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,114 @@
+.accom { background: var(--bone); }
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 72px;
+}
+@media (min-width: 900px) { .head { grid-template-columns: 1.4fr 1fr; gap: 80px; align-items: end; } }
+.lede { max-width: 38ch; }
+
+.grid {
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1.8fr 1fr 1fr auto;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  transition: background 0.2s, padding 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+.row:not(.disabled):hover { background: var(--cream); padding-left: 16px; padding-right: 16px; }
+.disabled { opacity: 0.55; cursor: default; }
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 60px 1fr auto;
+    grid-template-areas: "num title chev" "num meta1 meta1" "num price price";
+    gap: 6px 20px;
+    padding: 24px 0;
+  }
+  .num   { grid-area: num; }
+  .title { grid-area: title; }
+  .meta  { grid-area: meta1; }
+  .price { grid-area: price; }
+  .chev  { grid-area: chev; }
+}
+
+.num {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+
+.title h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(28px, 3vw, 40px);
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.title h3 em { font-style: italic; color: var(--terracotta-deep); }
+.title small {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.meta { font-size: 14px; color: var(--ink-soft); }
+.meta strong { color: var(--ink); display: block; font-weight: 500; font-size: 13px; letter-spacing: 0.04em; }
+
+.price { text-align: right; }
+.price strong { font-family: var(--serif); font-size: 26px; color: var(--ink); font-weight: 400; }
+.price small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.chev {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.chevFaded { opacity: 0.4; }
+.row:not(.disabled):hover .chev { background: var(--ink); color: var(--bone); border-color: var(--ink); }
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: oklch(0.65 0.14 145);
+  flex-shrink: 0;
+}
+.few .dot  { background: oklch(0.72 0.16 70); }
+.closed .dot { background: oklch(0.60 0.02 60); }

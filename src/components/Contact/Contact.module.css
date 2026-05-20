@@ -1,0 +1,91 @@
+.contact { background: var(--cream); }
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+@media (min-width: 900px) { .inner { grid-template-columns: 1fr 1fr; gap: 100px; } }
+
+.side :global(.section-title) { margin-bottom: 28px; }
+.blurb { margin: 28px 0 40px; max-width: 48ch; }
+.btn { margin-top: 40px; }
+
+.detail {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+}
+.detail:last-of-type { border-bottom: 1px solid var(--line); }
+
+@media (max-width: 600px) {
+  .detail { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
+  .val { font-size: 18px !important; }
+}
+
+.lbl {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.val {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.3;
+}
+.val a:hover { color: var(--terracotta-deep); }
+.val small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+.map {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: repeating-linear-gradient(
+    45deg,
+    oklch(0.84 0.030 75) 0 14px,
+    oklch(0.88 0.025 75) 14px 28px
+  );
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.pin {
+  position: absolute;
+  top: 48%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.pinMarker {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  border: 3px solid var(--bone);
+  box-shadow: 0 0 0 8px oklch(0.56 0.12 38 / 0.18), 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.pinLabel {
+  background: var(--bone);
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}

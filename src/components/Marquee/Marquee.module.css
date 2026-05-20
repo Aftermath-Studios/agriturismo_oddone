@@ -1,0 +1,36 @@
+.marquee {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 18px 0;
+  overflow: hidden;
+  border-block: 1px solid oklch(0.30 0.014 60);
+}
+
+.track {
+  display: flex;
+  gap: 56px;
+  white-space: nowrap;
+  animation: marquee 38s linear infinite;
+}
+.track span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+.sep { color: var(--terracotta); font-style: normal !important; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+  .marquee { padding: 14px 0; }
+  .track { gap: 32px; }
+  .track span { font-size: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+}

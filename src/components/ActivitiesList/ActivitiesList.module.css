@@ -1,0 +1,128 @@
+.activities { background: var(--bone); }
+.head { margin-bottom: 72px; max-width: 720px; }
+.lede { margin-top: 28px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 32px; } }
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  transition: transform 0.25s, border-color 0.25s;
+}
+.activity:hover { transform: translateY(-4px); border-color: var(--ink-soft); }
+
+.activityImg {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--sand);
+  overflow: hidden;
+}
+.activityImg :global(.ph) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.activityBody {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+}
+.activityHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.activityNum {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--terracotta-deep);
+  display: block;
+  margin-bottom: 8px;
+}
+.activity h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.activity h3 em { font-style: italic; color: var(--terracotta-deep); }
+.activitySeason {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  padding-top: 8px;
+}
+.activity p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--ink-soft); }
+
+.activityFoot {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.activityFoot dl {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px 24px;
+  margin: 0;
+}
+.activityFoot dl > div { display: flex; flex-direction: column; gap: 4px; }
+.activityFoot dt {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.activityFoot dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.activityPrice {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.activityPrice small {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.activityPrice strong {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--terracotta-deep);
+  line-height: 1;
+  margin-top: 4px;
+}
