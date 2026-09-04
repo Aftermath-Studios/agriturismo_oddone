@@ -53,7 +53,7 @@
   font-style: italic;
   flex-shrink: 0;
 }
-.nav-brand-text { line-height: 1; min-width: 0; }
+.nav-brand-text { line-height: 1; min-width: 0; white-space: nowrap; }
 .nav-brand-text small {
   display: block;
   font-family: var(--sans);
@@ -315,6 +315,7 @@ body.nav-open { overflow: hidden; }
   .nav { padding: 20px var(--pad); }
   .nav.scrolled { padding: 14px var(--pad); }
   .nav.solid { padding: 16px var(--pad); }
+  .nav-brand { font-size: clamp(27px, 8vw, 32px); }
   .nav-cta { display: none; } /* hide on small phones — exists in mobile menu */
   .nav-brand-text small { display: none; }
 }
@@ -337,8 +338,8 @@ body.nav-open { overflow: hidden; }
 
 .hero-bg {
   width: 100%;
-  aspect-ratio: 2358 / 1239;
-  background-image: url("/images/home-collage.png");
+  aspect-ratio: 2348 / 1792;
+  background-image: url("/images/home-collage-2026.jfif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -465,7 +466,8 @@ body.nav-open { overflow: hidden; }
 }
 .accom-row {
   display: grid;
-  grid-template-columns: 80px 1.8fr 1fr 1fr auto;
+  grid-template-columns: 80px minmax(0, 1.8fr) minmax(0, 1fr) minmax(0, 1fr) auto 44px;
+  grid-template-areas: "num title details availability price chev";
   align-items: center;
   gap: 32px;
   padding: 28px 0;
@@ -475,19 +477,26 @@ body.nav-open { overflow: hidden; }
 }
 .accom-row:not(.disabled):hover { background: var(--cream); padding-left: 16px; padding-right: 16px; }
 .accom-row.disabled { opacity: 0.55; cursor: default; }
+.accom-row .num { grid-area: num; }
+.accom-row .title { grid-area: title; min-width: 0; }
+.accom-row .details { grid-area: details; min-width: 0; }
+.accom-row .availability { grid-area: availability; min-width: 0; }
+.accom-row .price { grid-area: price; }
+.accom-row .chev { grid-area: chev; }
 
 @media (max-width: 900px) {
   .accom-row {
     grid-template-columns: 60px 1fr auto;
-    grid-template-areas: "num title chev" "num meta meta" "num price price";
+    grid-template-areas:
+      "num title chev"
+      "num details details"
+      "num availability availability"
+      "num price price";
     gap: 6px 20px;
     padding: 24px 0;
   }
-  .accom-row .num { grid-area: num; }
-  .accom-row .title { grid-area: title; }
-  .accom-row .meta { grid-area: meta; }
-  .accom-row .price { grid-area: price; }
-  .accom-row .chev { grid-area: chev; }
+  .accom-row .details { margin-top: 8px; }
+  .accom-row .availability { grid-area: availability; margin-top: 4px; }
 }
 
 .accom-row .num {
@@ -524,9 +533,22 @@ body.nav-open { overflow: hidden; }
   gap: 2px;
 }
 .accom-collage img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.accom-collage img.gallery-only { display: none; }
 .accom-collage.three img:first-child { grid-row: 1 / 3; }
 @media (max-width: 600px) {
   .accom-collage { width: 72px; height: 72px; }
+}
+@media (max-width: 360px) {
+  .accom-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "num chev"
+      "title title"
+      "details details"
+      "availability availability"
+      "price price";
+    gap: 10px 14px;
+  }
 }
 .accom-row .title h3 {
   font-family: var(--serif);

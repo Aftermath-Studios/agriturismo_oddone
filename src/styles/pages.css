@@ -105,7 +105,7 @@
       margin: 20px 0 0; text-wrap: balance;
     }.route-alloggi .pres-intro h1 em { font-style: italic; font-weight: 400; color: var(--terracotta-deep); }.route-alloggi .pres-intro .lede { margin-top: 28px; max-width: 60ch; }.route-alloggi .pres-intro .sub { margin-top: 20px; max-width: 58ch; }.route-alloggi .pres-row { display: grid; grid-template-columns: 1fr; gap: clamp(36px, 5vw, 72px); align-items: center; }
     @media (min-width: 900px) {.route-alloggi .pres-row { grid-template-columns: 1fr 1fr; }.route-alloggi .pres-row.flip .pres-row-media { order: 2; }
-    }.route-alloggi .pres-row-media .ph { width: 100%; aspect-ratio: 5 / 4; }.route-alloggi .pres-photo { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; display: block; }.route-alloggi .pres-num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; color: var(--terracotta); }.route-alloggi .pres-row h3 {
+    }.route-alloggi .pres-row-media .ph { width: 100%; aspect-ratio: 5 / 4; }.route-alloggi .pres-photo { width: 100%; height: auto; display: block; }.route-alloggi .pres-num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; color: var(--terracotta); }.route-alloggi .pres-row h3 {
       font-family: var(--serif); font-weight: 400;
       font-size: clamp(30px, 3.4vw, 46px); line-height: 1.06;
       letter-spacing: -0.01em; margin: 16px 0 20px; text-wrap: balance;
@@ -160,7 +160,7 @@
       letter-spacing: -0.02em; margin: 20px 0 0; text-wrap: balance;
     }.route-attivita .pres-intro h1 em { font-style: italic; font-weight: 400; color: var(--terracotta-deep); }.route-attivita .pres-intro .lede { margin-top: 28px; max-width: 60ch; }.route-attivita .pres-intro .sub { margin-top: 20px; max-width: 60ch; }.route-attivita .act { border-top: 1px solid var(--line); }.route-attivita .act-row { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
     @media (min-width: 900px) {.route-attivita .act-row { grid-template-columns: 1fr 1fr; }.route-attivita .act-row.flip .act-media { order: 2; }
-    }.route-attivita .act-media .ph { width: 100%; aspect-ratio: 4 / 3; }.route-attivita .act-kicker {
+    }.route-attivita .act-media .ph { width: 100%; aspect-ratio: 4 / 3; }.route-attivita .act-photo { width: 100%; height: auto; display: block; }.route-attivita .act-kicker {
       display: inline-flex; align-items: center; gap: 10px;
       font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta);
     }.route-attivita .act-index { font-family: var(--mono); font-size: 12px; color: var(--ink-mute); }.route-attivita .act h3 {
@@ -182,7 +182,7 @@
       letter-spacing: -0.02em; margin: 20px 0 0; text-wrap: balance;
     }.route-biketour .pres-intro h1 em { font-style: italic; font-weight: 400; color: var(--terracotta-deep); }.route-biketour .pres-intro .lede { margin-top: 28px; max-width: 60ch; }.route-biketour .pres-row { display: grid; grid-template-columns: 1fr; gap: clamp(36px, 5vw, 72px); align-items: center; }
     @media (min-width: 900px) {.route-biketour .pres-row { grid-template-columns: 1fr 1fr; }.route-biketour .pres-row.flip .pres-row-media { order: 2; }
-    }.route-biketour .pres-row-media .ph { width: 100%; aspect-ratio: 5 / 4; }.route-biketour .pres-num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; color: var(--terracotta); }.route-biketour .pres-row h3 {
+    }.route-biketour .pres-row-media .ph { width: 100%; aspect-ratio: 5 / 4; }.route-biketour .pres-photo { width: 100%; height: auto; display: block; }.route-biketour .pres-num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; color: var(--terracotta); }.route-biketour .pres-row h3 {
       font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 3.4vw, 46px);
       line-height: 1.06; letter-spacing: -0.01em; margin: 16px 0 18px; text-wrap: balance;
     }.route-biketour .pres-row h3 em { font-style: italic; color: var(--terracotta-deep); }.route-biketour .pres-row .body-text { max-width: 46ch; }.route-biketour .levels-head { max-width: 62ch; }.route-biketour .levels-head h2 { margin-top: 16px; }.route-biketour .levels-grid {

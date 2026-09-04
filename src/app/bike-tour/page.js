@@ -18,9 +18,8 @@ export default function BikeTourPage() {
       <section className="section container" id="filosofia">
         <div className="pres-row reveal">
           <div className="pres-row-media">
-            <div className="ph" data-label="LA FILOSOFIA · boschi di Bardineto, Val Bormida">
-              <div className="ph-icon">⛰</div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="pres-photo" src="/images/bike-tour-collage.jfif" alt="Collage di percorsi mountain bike nei boschi di Bardineto e in Val Bormida" />
           </div>
           <div>
             <div className="pres-num">La filosofia</div>

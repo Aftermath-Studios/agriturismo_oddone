@@ -21,7 +21,7 @@ export default function AlloggiPage() {
         <div className="pres-row reveal">
           <div className="pres-row-media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="pres-photo" src="/images/tradizione.png" alt="Ingresso di un alloggio storico in pietra dell'Agriturismo Oddone" />
+            <img className="pres-photo" src="/images/alloggi-tradizione.jfif" alt="Collage degli alloggi in pietra e legno dell'Agriturismo Oddone" />
           </div>
           <div>
             <div className="pres-num">Atmosfera classica</div>
@@ -37,7 +37,7 @@ export default function AlloggiPage() {
         <div className="pres-row flip reveal">
           <div className="pres-row-media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="pres-photo" src="/images/design.jpeg" alt="Interno di un nuovo alloggio premium: pietra a vista, cucina in legno e design moderno" />
+            <img className="pres-photo" src="/images/alloggi-benessere.jfif" alt="Collage degli alloggi, delle docce emozionali e dei boschi di Bardineto" />
           </div>
           <div>
             <div className="pres-num">Evoluzione premium</div>

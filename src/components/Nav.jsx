@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const LINKS = [
-  { href: "/alloggi", route: "alloggi", label: "Alloggi", num: "01", sub: "Sei appartamenti" },
+  { href: "/alloggi", route: "alloggi", label: "Alloggi", num: "01", sub: "Cinque appartamenti" },
   { href: "/ristorante", route: "ristorante", label: "Ristorante", num: "02", sub: "Cucina di valle" },
   { href: "/bike-tour", route: "bike-tour", label: "Bike Tour", num: "03", sub: "100 km di sentieri" },
   { href: "/attivita", route: "attivita", label: "Attività", num: "04", sub: "Cosa fare in valle" },

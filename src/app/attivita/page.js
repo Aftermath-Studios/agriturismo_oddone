@@ -19,9 +19,8 @@ export default function AttivitaPage() {
       <section className="section container act" id="mtb">
         <div className="act-row reveal">
           <div className="act-media">
-            <div className="ph" data-label="MTB & E-BIKE · crinali tra i monti e il mare">
-              <div className="ph-icon">⛰</div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="act-photo" src="/images/attivita-mtb.jfif" alt="Collage di escursioni in mountain bike nei boschi e sui crinali di Bardineto" />
           </div>
           <div>
             <span className="act-kicker">01 · Su due ruote</span>
@@ -49,9 +48,8 @@ export default function AttivitaPage() {
       <section className="section container act" id="trekking">
         <div className="act-row flip reveal">
           <div className="act-media">
-            <div className="ph" data-label="TREKKING · la seconda faggeta più grande d'Europa">
-              <div className="ph-icon">❦</div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="act-photo" src="/images/attivita-trekking.jfif" alt="Collage dei cammini storici e dei sentieri di Bardineto" />
           </div>
           <div>
             <span className="act-kicker">02 · A piedi</span>
@@ -70,9 +68,8 @@ export default function AttivitaPage() {
       <section className="section container act" id="cavallo">
         <div className="act-row reveal">
           <div className="act-media">
-            <div className="ph" data-label="A CAVALLO · radure silenziose e boschi di faggio">
-              <div className="ph-icon">✦</div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="act-photo" src="/images/attivita-cavalli.jfif" alt="Collage delle passeggiate a cavallo nella tenuta dell'Agriturismo Oddone" />
           </div>
           <div>
             <span className="act-kicker">03 · Il ritmo lento del &quot;wild&quot;</span>
@@ -91,9 +88,8 @@ export default function AttivitaPage() {
       <section className="section container act" id="funghi">
         <div className="act-row flip reveal">
           <div className="act-media">
-            <div className="ph" data-label="RACCOLTA FUNGHI · porcini nei boschi privati">
-              <div className="ph-icon">✿</div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="act-photo" src="/images/attivita-funghi.jfif" alt="Collage della raccolta dei funghi porcini nei boschi di Bardineto" />
           </div>
           <div>
             <span className="act-kicker">04 · La caccia al &quot;tesoro&quot;</span>
