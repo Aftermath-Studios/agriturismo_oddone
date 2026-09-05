@@ -34,7 +34,7 @@ export default function Accommodations() {
             </div>
             <div className="meta details"><strong>2 camere · 1 bagno</strong>Cucina, pietra a vista, doccia emozionale</div>
             <div className="meta availability"><span className="accom-status"><span className="dot"></span> Disponibile</span></div>
-            <div className="price"><strong>€ 140</strong><small>a notte · da</small></div>
+            <div className="price"><strong>€ 0</strong><small>a notte · da</small></div>
             <span className="chev">→</span>
           </a>
 
@@ -53,7 +53,7 @@ export default function Accommodations() {
             </div>
             <div className="meta details"><strong>2 camere · 1 bagno</strong>Cucina, balcone, letto king-size</div>
             <div className="meta availability"><span className="accom-status few"><span className="dot"></span> Ultime date</span></div>
-            <div className="price"><strong>€ 140</strong><small>a notte · da</small></div>
+            <div className="price"><strong>€ 0</strong><small>a notte · da</small></div>
             <span className="chev">→</span>
           </a>
 
@@ -79,7 +79,7 @@ export default function Accommodations() {
             </div>
             <div className="meta details"><strong>3 camere · 2 bagni</strong>Cucina grande, soppalco, cromoterapia</div>
             <div className="meta availability"><span className="accom-status"><span className="dot"></span> Disponibile</span></div>
-            <div className="price"><strong>€ 190</strong><small>a notte · da</small></div>
+            <div className="price"><strong>€ 0</strong><small>a notte · da</small></div>
             <span className="chev">→</span>
           </a>
 
@@ -103,7 +103,7 @@ export default function Accommodations() {
             </div>
             <div className="meta details"><strong>1 camera · 1 bagno</strong>Mansarda, lucernari, doccia emozionale</div>
             <div className="meta availability"><span className="accom-status"><span className="dot"></span> Disponibile</span></div>
-            <div className="price"><strong>€ 110</strong><small>a notte · da</small></div>
+            <div className="price"><strong>€ 0</strong><small>a notte · da</small></div>
             <span className="chev">→</span>
           </a>
 
@@ -129,7 +129,7 @@ export default function Accommodations() {
             </div>
             <div className="meta details"><strong>2 camere · 1 bagno</strong>Camino a legna, travi originali</div>
             <div className="meta availability"><span className="accom-status few"><span className="dot"></span> Ultime date</span></div>
-            <div className="price"><strong>€ 160</strong><small>a notte · da</small></div>
+            <div className="price"><strong>€ 0</strong><small>a notte · da</small></div>
             <span className="chev">→</span>
           </a>
 
