@@ -298,18 +298,47 @@
 /* ===================== .route-offers (offers) ===================== */
 .route-offers {
       min-height: 100vh;
+      min-height: 100svh;
       background-image:
         linear-gradient(90deg, rgba(248, 245, 238, 0.94) 0%, rgba(248, 245, 238, 0.84) 44%, rgba(248, 245, 238, 0.28) 74%, rgba(248, 245, 238, 0.12) 100%),
+        linear-gradient(90deg, rgba(248, 245, 238, 0.96) 0%, rgba(248, 245, 238, 0.88) 42%, rgba(248, 245, 238, 0.34) 72%, rgba(248, 245, 238, 0.14) 100%),
         url("/images/offerte-background.jpeg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      margin-left: -50rem;
     }.route-offers .offers-empty { max-width: 64ch; padding-top: clamp(24px, 6vw, 80px); padding-bottom: clamp(60px, 10vw, 140px); }.route-offers .offers-empty-title {
+    }.route-offers .offers-empty {
+      width: min(100%, 64ch);
+      max-width: 64ch;
+      margin-left: 0;
+      margin-right: auto;
+      padding-top: clamp(96px, 14vh, 180px);
+      padding-right: clamp(20px, 5vw, 72px);
+      padding-bottom: clamp(72px, 12vh, 140px);
+      padding-left: clamp(20px, 7vw, 112px);
+      text-align: left;
+    }.route-offers .offers-empty-title {
       font-family: var(--serif); font-weight: 300;
       font-size: clamp(40px, 6.4vw, 92px); line-height: 1.0;
       letter-spacing: -0.02em; margin: 20px 0 0; text-wrap: balance;
     }.route-offers .offers-empty-title em { font-style: italic; font-weight: 400; color: var(--terracotta-deep); }.route-offers .offers-empty-lede { margin-top: 28px; max-width: 56ch; }.route-offers .offers-empty-cta { margin-top: 34px; }
+    @media (max-width: 760px) {
+      .route-offers {
+        min-height: 100svh;
+        background-image:
+          linear-gradient(180deg, rgba(248, 245, 238, 0.97) 0%, rgba(248, 245, 238, 0.9) 12%, rgba(248, 245, 238, 0.52) 100%),
+          url("/images/offerte-background.jpeg");
+        background-position: center;
+      }
+      .route-offers .offers-empty {
+        width: 100%;
+        max-width: none;
+        padding-top: clamp(88px, 14vh, 132px);
+        padding-right: clamp(18px, 6vw, 32px);
+        padding-bottom: clamp(64px, 12vh, 112px);
+        padding-left: clamp(18px, 6vw, 32px);
+      }
+    }
   
 
 /* ===================== .route-contatti ===================== */
